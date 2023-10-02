@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Strength Checker</h1>
+        <form method="POST" action="/check">
+            <label for="password">Enter your password:</label>
+            <input type="password" name="password" id="password" required>
+            <button type="submit">Check</button>
+        </form>
+        <div class="result">
+            <p>Strength: <span id="result-strength"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
